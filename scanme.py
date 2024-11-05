@@ -68,7 +68,7 @@ def worker(ip, timeout, decoys, fragment):
 
 # Main function to manage the scanning process
 def scan(target, ports, threads, timeout, decoys, fragment):
-    print('\n' + f"Starting Scan For {target}")
+    print('\n' + f"Starting Fucking With {target}")
     random.shuffle(ports)
 
     for port in ports:
@@ -87,7 +87,7 @@ def scan(target, ports, threads, timeout, decoys, fragment):
         thread.join()
 
 # Argument parsing
-parser = argparse.ArgumentParser(description="Advanced Port Scanner with Firewall Evasion and Banner Grabbing")
+parser = argparse.ArgumentParser(description="Hold your butts here we goooo")
 parser.add_argument("target", help="Target IP address or hostname")
 parser.add_argument("-p", "--ports", help="Comma-separated list of ports to scan, e.g., 22,80,443")
 parser.add_argument("-t", "--threads", type=int, default=10, help="Number of threads to use")
@@ -99,7 +99,7 @@ args = parser.parse_args()
 
 # Check if target is a single IP or a list
 if ',' in args.target:
-    print(colored("[*] Scanning multiple targets", "yellow"))
+    print(colored("[*] Scanning multiple fuckers", "yellow"))
     targets = args.target.split(',')
 else:
     targets = [args.target]
